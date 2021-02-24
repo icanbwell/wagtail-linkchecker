@@ -10,7 +10,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='wagtail-linkchecker',
-    version='0.5.4',
+    version='0.5.5-bwell',
     description="A tool to assist with finding broken links on your wagtail site.",
     long_description=readme,
     author='Neon Jungle',
@@ -20,7 +20,7 @@ setup(
     install_requires=[
         'wagtail>=1.0',
         'requests>=2.9.1',
-        'celery>=4.0,<5'
+        'celery>=5'
     ],
     zip_safe=False,
     license='BSD License',
