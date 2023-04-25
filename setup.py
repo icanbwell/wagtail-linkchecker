@@ -10,7 +10,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='wagtail-linkchecker',
-    version='0.6.0-bwell',
+    version='0.6.0+bwell',
     description="A tool to assist with finding broken links on your wagtail site.",
     long_description=readme,
     author='Neon Jungle',
