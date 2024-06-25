@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django import __version__ as DJANGO_VERSION
-from django.conf.urls import include, url
+from django.urls import include, re_path
 from django.utils.translation import gettext_lazy as _
 
 from wagtaillinkchecker import urls
@@ -23,7 +23,7 @@ else:
 @hooks.register('register_admin_urls')
 def register_admin_urls():
     return [
-        url(r'^link-checker/', include(urls)),
+        re_path(r'^link-checker/', include(urls)),
     ]
 
 
