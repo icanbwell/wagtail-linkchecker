@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django import __version__ as DJANGO_VERSION
 from django.conf.urls import include, url
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from wagtaillinkchecker import urls
 from wagtaillinkchecker import utils
