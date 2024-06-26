@@ -4,14 +4,8 @@ from django.db.models.signals import pre_delete
 from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 
-from wagtaillinkchecker import utils
-
-if utils.is_wagtail_version_more_than_equal_to_2_0():
-    from wagtail.core.models import Site
-    from wagtail.core.models import Page
-else:
-    from wagtail.wagtailcore.models import Site
-    from wagtail.wagtailcore.models import Page
+from wagtail.models import Site
+from wagtail.models import Page
 
 
 class SitePreferences(models.Model):
